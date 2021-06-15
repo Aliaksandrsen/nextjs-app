@@ -2,11 +2,13 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 export default function Home(): JSX.Element {
+	const a = 1;
+
 	return (
 		<div className={styles.container}>
 			<Head>
 				<title>Create Next App</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link key={1} rel="icon" href="/favicon.ico" />
 			</Head>
 
 			<main className={styles.main}>
@@ -56,7 +58,7 @@ export default function Home(): JSX.Element {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Powered by{' '}
+					Powered by{a}
 					<img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
 				</a>
 			</footer>
